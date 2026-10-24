@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://eras.app/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/es</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es"/>
+  </url>
+  <url>
+    <loc>https://eras.app/exemplos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/exemplos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/exemplos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/exemplos"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/en/exemplos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/exemplos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/exemplos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/exemplos"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/es/exemplos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/exemplos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/exemplos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/exemplos"/>
+  </url>
+  <url>
+    <loc>https://eras.app/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/sobre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/sobre"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/sobre"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/en/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/sobre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/sobre"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/sobre"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/es/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/sobre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/sobre"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/sobre"/>
+  </url>
+  <url>
+    <loc>https://eras.app/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/privacy"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/privacy"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/es/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/privacy"/>
+  </url>
+  <url>
+    <loc>https://eras.app/termos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/termos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/termos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/termos"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/en/termos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/termos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/termos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/termos"/>
+  </url>
+  <url>
+    <loc>https://eras.app/locales/es/termos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://eras.app/termos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eras.app/locales/en/termos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://eras.app/locales/es/termos"/>
+  </url>
+</urlset>

@@ -1,0 +1,107 @@
+/* Eras — design tokens. Every color, font, space, radius and shadow of the site lives here.
+   Same palette, fonts and radii as the app (app/src/core/theme/palette.ts, dark scheme — the app's default). */
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('../fonts/dm-serif-display-italic-latin.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Brand palette of the app. */
+  --color-bg: #0d0d14; /* night black: the background */
+  --color-surface: #171624; /* violet graphite: cards, lists, navigation */
+  --color-sunk: #221f35; /* inputs, chips, pressed rows */
+  --color-border: #26233a;
+  --color-border-strong: #3a3558;
+  --color-brand: #65559a; /* deep purple: gradients and secondary surfaces */
+  --color-brand-deep: #241f3a;
+  --color-on-brand: #f6f3ff;
+  --color-on-brand-muted: #eae2ff;
+  --color-highlight: #e0d4ff; /* lavender text that stands out on the brand gradient */
+  --color-primary: #eae2ff; /* lavender white: the main button */
+  --color-primary-hover: #ffffff;
+  --color-on-primary: #171624;
+  --color-accent: #8b6ce8; /* purple: icons, rings and active elements */
+  --color-secondary: #b58aff; /* vibrant lavender: links, highlights, indicators */
+  --color-text: #f6f3ff; /* ice white: titles and main text */
+  --color-text-muted: #ada4c7; /* lavender grey: descriptions, dates, secondary text */
+  --color-success: #6fd39a;
+  --color-error: #ff8a80;
+  --color-device: #050509;
+
+  /* Brand gradient (purple → deep purple → violet night), as in the app's hero card and story rings. */
+  --gradient-brand: linear-gradient(135deg, #8b6ce8 0%, #65559a 52%, #2c2549 100%);
+  --gradient-ring: conic-gradient(from 210deg, #b58aff, #8b6ce8, #65559a, #b58aff);
+  --gradient-text: linear-gradient(100deg, #e0d4ff 0%, #b58aff 55%, #8b6ce8 100%);
+  --glow-1: rgb(139 108 232 / 0.32);
+  --glow-2: rgb(101 85 154 / 0.28);
+
+  /* Veils (translucent layers over dark and gradient surfaces). */
+  --veil-1: rgb(246 243 255 / 0.06);
+  --veil-2: rgb(246 243 255 / 0.1);
+  --veil-3: rgb(246 243 255 / 0.18);
+  --scrim: rgb(13 13 20 / 0.72);
+
+  /* Type */
+  --font-display: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-text: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-quote: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --weight-display: 800;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.02rem + 0.5vw, 1.375rem);
+  --text-xl: clamp(1.375rem, 1.15rem + 1.1vw, 2rem);
+  --text-2xl: clamp(1.875rem, 1.35rem + 2.4vw, 3.25rem);
+  --text-3xl: clamp(2.5rem, 1.5rem + 4.8vw, 5.25rem);
+  --leading-tight: 1.04;
+  --leading-snug: 1.2;
+  --leading-body: 1.6;
+  --tracking-display: -0.03em;
+
+  /* Space (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --section-space: clamp(4rem, 2.75rem + 5.5vw, 7.5rem);
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --content-max: 76rem;
+  --measure: 68ch;
+
+  /* Shape and depth (radii of the app: 8 / 14 / 20 / 24) */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-phone: 44px;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4), 0 2px 8px rgb(0 0 0 / 0.25);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 0.45), 0 2px 6px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 30px 60px rgb(0 0 0 / 0.55), 0 10px 20px rgb(0 0 0 / 0.35);
+  --shadow-glow: 0 18px 48px rgb(139 108 232 / 0.35);
+  --hairline: 1px solid var(--color-border);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 160ms;
+  --duration-base: 280ms;
+  --duration-slow: 520ms;
+}

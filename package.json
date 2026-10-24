@@ -1,0 +1,12 @@
+{
+  "name": "@eras/site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page do Eras (HTML, CSS e JS puros, sem build).",
+  "scripts": {
+    "pages": "node scripts/build-pages.mjs",
+    "check": "./scripts/deploy-vercel.sh --check",
+    "deploy:vercel": "./scripts/deploy-vercel.sh",
+    "deploy:vercel:prod": "./scripts/deploy-vercel.sh --prod"
+  }
+}
