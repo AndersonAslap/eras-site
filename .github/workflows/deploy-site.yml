@@ -1,0 +1,64 @@
+# Publica o site (raiz deste repositório) no GitHub Pages a cada push na main.
+# Guia completo: docs/17-PUBLICAR-SITE-NO-GITHUB-PAGES.md (no repositório principal do Eras)
+name: Deploy do site (GitHub Pages)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Um deploy por vez; não cancela um deploy em andamento.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Configurar o GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Verificar páginas obrigatórias e links internos
+        run: bash scripts/deploy-vercel.sh --check
+
+      # Gera de novo as páginas com a URL real do Pages (canonical, sitemap, Open Graph e caminhos da 404).
+      # A variável de repositório SITE_URL, se existir, tem prioridade (ex.: https://eras.app).
+      - name: Gerar as páginas para a URL publicada
+        env:
+          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url }}
+        run: node scripts/build-pages.mjs
+
+      # Copia para fora do checkout para não incluir a própria pasta de saída.
+      - name: Montar a pasta publicada (sem arquivos de desenvolvimento)
+        run: |
+          rsync -a ./ "$RUNNER_TEMP/_site/" \
+            --exclude .git --exclude .github --exclude scripts \
+            --exclude README.md --exclude package.json --exclude vercel.json --exclude .vercelignore
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
